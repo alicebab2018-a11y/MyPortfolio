@@ -12,25 +12,40 @@ body {
     color: white;
 }
 
-/* Navbar */
+/* NAVBAR */
+
 .navbar {
     position: fixed;
     width: 100%;
-    padding: 25px 80px;
+    padding: 30px 0;
+    z-index: 999;
+    transition: all .3s ease;
+}
+
+.navbar.sticky {
+    padding: 18px 0;
+    background: crimson;
+}
+
+.navbar .max-width {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo a {
-    color: white;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
     text-decoration: none;
-    font-size: 35px;
-    font-weight: 500;
 }
 
-.logo a span {
+.logo span {
     color: crimson;
+}
+
+.navbar.sticky .logo span {
+    color: #fff;
 }
 
 .menu {
@@ -39,7 +54,7 @@ body {
 }
 
 .menu li {
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 .menu li a {
@@ -47,10 +62,15 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+    transition: .3s;
 }
 
 .menu li a:hover {
     color: crimson;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: black;
 }
 
 /* Home Section */
@@ -209,4 +229,115 @@ body {
 .about-content .right a:hover {
     background: transparent;
     color: crimson;
+}
+
+.services {
+    background: #111;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.serv-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    background: #222;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 25px;
+    transition: .3s;
+}
+
+.services {
+    background: #111;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.services .title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.services .title::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.services .title::after {
+    content: "what i provide";
+    position: absolute;
+    left: 50%;
+    bottom: -22px;
+    transform: translateX(-50%);
+    background: #111;
+    color: crimson;
+    padding: 0 8px;
+    font-size: 20px;
+}
+
+.serv-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 340px;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.card:hover {
+    background: crimson;
+    transform: translateY(-12px);
+}
+
+.box {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.box i {
+    font-size: 55px;
+    color: crimson;
+    transition: .4s;
+}
+
+.card:hover i {
+    color: white;
+}
+
+.box .text {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.box p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.card:hover p,
+.card:hover .text {
+    color: white;
 }
