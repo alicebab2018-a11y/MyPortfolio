@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="script.js"></script>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#">Portfo<span>lio</span> </a>
-      </div>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="navbar">
+        <div class="max-width">
+          <div class="logo">
+            <a href="#">Portfo<span>lio.</span></a>
+          </div>
+
+          <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <section class="home">
       <div class="home-content">
         <div class="text-1">Hello, My name is</div>
@@ -55,6 +65,52 @@
         </p>
 
         <a href="#">Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services" id="services">
+  <div class="max-width">
+    <h2 class="title">My services</h2>
+
+    <div class="serv-content">
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-paint-brush"></i>
+
+          <div class="text">Web Design</div>
+
+          <p>
+            I create modern, secure and responsive websites that provide
+            excellent user experiences.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-chart-line"></i>
+
+          <div class="text">UI / UX Design</div>
+
+          <p>
+            I transform ideas into beautiful interfaces and user experiences
+            using modern design principles.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-code"></i>
+
+          <div class="text">App Design</div>
+
+          <p>
+            I build responsive mobile applications that are fast, scalable and
+            easy to maintain.
+          </p>
+        </div>
       </div>
     </div>
   </div>
