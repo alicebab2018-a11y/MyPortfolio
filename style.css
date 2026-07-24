@@ -341,3 +341,201 @@ body {
 .card:hover .text {
     color: white;
 }
+/* ============================= */
+/* LARGE TABLETS */
+/* ============================= */
+@media (max-width: 991px){
+
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .home .text-2{
+        font-size: 65px;
+    }
+
+    .home .text-3{
+        font-size: 35px;
+    }
+
+    .about-content,
+    .serv-content,
+    .skills-content,
+    .contact-content{
+        flex-wrap: wrap;
+    }
+
+    .about-content .left,
+    .about-content .right,
+    .skills-content .column,
+    .contact-content .column{
+        width: 100%;
+    }
+
+    .card{
+        width: calc(50% - 15px);
+    }
+
+}
+
+/* ============================= */
+/* TABLETS */
+/* ============================= */
+@media (max-width:768px){
+
+    .max-width{
+        padding: 0 30px;
+    }
+
+    /* Navbar */
+
+    .menu{
+        position: fixed;
+        background:#111;
+        height:100vh;
+        width:100%;
+        left:-100%;
+        top:0;
+        text-align:center;
+        padding-top:80px;
+        transition:.4s;
+        display:block;
+    }
+
+    .menu.active{
+        left:0;
+    }
+
+    .menu li{
+        display:block;
+        margin:30px 0;
+    }
+
+    .menu li a{
+        font-size:25px;
+    }
+
+    .menu-btn{
+        display:block;
+        color:white;
+        font-size:28px;
+        cursor:pointer;
+    }
+
+    /* Home */
+
+    .home{
+        text-align:center;
+    }
+
+    .home-content{
+        width:100%;
+    }
+
+    .home .text-1{
+        font-size:24px;
+    }
+
+    .home .text-2{
+        font-size:55px;
+    }
+
+    .home .text-3{
+        font-size:30px;
+    }
+
+    .hire-btn{
+        font-size:18px;
+        padding:12px 30px;
+    }
+
+    /* About */
+
+    .about-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-content .left img{
+        width:260px;
+    }
+
+    .about-content .right{
+        margin-top:40px;
+    }
+
+    /* Services */
+
+    .serv-content{
+        justify-content:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:450px;
+    }
+
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+@media (max-width:480px){
+
+    .max-width{
+        padding:0 20px;
+    }
+
+    .logo a{
+        font-size:30px;
+    }
+
+    .home .text-1{
+        font-size:18px;
+    }
+
+    .home .text-2{
+        font-size:38px;
+    }
+
+    .home .text-3{
+        font-size:22px;
+    }
+
+    .title{
+        font-size:32px;
+    }
+
+    .about .title::after,
+    .services .title::after,
+    .skills .title::after,
+    .contact .title::after{
+        font-size:16px;
+    }
+
+    .about-content .left img{
+        width:200px;
+    }
+
+    .box{
+        padding:30px 20px;
+    }
+
+    .box i{
+        font-size:45px;
+    }
+
+    .box .text{
+        font-size:22px;
+    }
+
+    .box p{
+        font-size:15px;
+    }
+
+    .hire-btn{
+        width:100%;
+        text-align:center;
+    }
+
+}
