@@ -7,3 +7,9 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("sticky");
   }
 });
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+
+menuBtn.onclick = () => {
+  menu.classList.toggle("active");
+};
