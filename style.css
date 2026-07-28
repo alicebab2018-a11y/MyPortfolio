@@ -341,38 +341,39 @@ body {
 .card:hover .text {
     color: white;
 }
+
 /* ============================= */
 /* LARGE TABLETS */
 /* ============================= */
-@media (max-width: 991px){
+@media (max-width: 991px) {
 
-    .max-width{
+    .max-width {
         padding: 0 50px;
     }
 
-    .home .text-2{
+    .home .text-2 {
         font-size: 65px;
     }
 
-    .home .text-3{
+    .home .text-3 {
         font-size: 35px;
     }
 
     .about-content,
     .serv-content,
     .skills-content,
-    .contact-content{
+    .contact-content {
         flex-wrap: wrap;
     }
 
     .about-content .left,
     .about-content .right,
     .skills-content .column,
-    .contact-content .column{
+    .contact-content .column {
         width: 100%;
     }
 
-    .card{
+    .card {
         width: calc(50% - 15px);
     }
 
@@ -381,98 +382,98 @@ body {
 /* ============================= */
 /* TABLETS */
 /* ============================= */
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .max-width{
+    .max-width {
         padding: 0 30px;
     }
 
     /* Navbar */
 
-    .menu{
+    .menu {
         position: fixed;
-        background:#111;
-        height:100vh;
-        width:100%;
-        left:-100%;
-        top:0;
-        text-align:center;
-        padding-top:80px;
-        transition:.4s;
-        display:block;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: .4s;
+        display: block;
     }
 
-    .menu.active{
-        left:0;
+    .menu.active {
+        left: 0;
     }
 
-    .menu li{
-        display:block;
-        margin:30px 0;
+    .menu li {
+        display: block;
+        margin: 30px 0;
     }
 
-    .menu li a{
-        font-size:25px;
+    .menu li a {
+        font-size: 25px;
     }
 
-    .menu-btn{
-        display:block;
-        color:white;
-        font-size:28px;
-        cursor:pointer;
+    .menu-btn {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
     }
 
     /* Home */
 
-    .home{
-        text-align:center;
+    .home {
+        text-align: center;
     }
 
-    .home-content{
-        width:100%;
+    .home-content {
+        width: 100%;
     }
 
-    .home .text-1{
-        font-size:24px;
+    .home .text-1 {
+        font-size: 24px;
     }
 
-    .home .text-2{
-        font-size:55px;
+    .home .text-2 {
+        font-size: 55px;
     }
 
-    .home .text-3{
-        font-size:30px;
+    .home .text-3 {
+        font-size: 30px;
     }
 
-    .hire-btn{
-        font-size:18px;
-        padding:12px 30px;
+    .hire-btn {
+        font-size: 18px;
+        padding: 12px 30px;
     }
 
     /* About */
 
-    .about-content{
-        flex-direction:column;
-        text-align:center;
+    .about-content {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .about-content .left img{
-        width:260px;
+    .about-content .left img {
+        width: 260px;
     }
 
-    .about-content .right{
-        margin-top:40px;
+    .about-content .right {
+        margin-top: 40px;
     }
 
     /* Services */
 
-    .serv-content{
-        justify-content:center;
+    .serv-content {
+        justify-content: center;
     }
 
-    .card{
-        width:100%;
-        max-width:450px;
+    .card {
+        width: 100%;
+        max-width: 450px;
     }
 
 }
@@ -480,62 +481,229 @@ body {
 /* ============================= */
 /* MOBILE */
 /* ============================= */
-@media (max-width:480px){
+@media (max-width:480px) {
 
-    .max-width{
-        padding:0 20px;
+    .max-width {
+        padding: 0 20px;
     }
 
-    .logo a{
-        font-size:30px;
+    .logo a {
+        font-size: 30px;
     }
 
-    .home .text-1{
-        font-size:18px;
+    .home .text-1 {
+        font-size: 18px;
     }
 
-    .home .text-2{
-        font-size:38px;
+    .home .text-2 {
+        font-size: 38px;
     }
 
-    .home .text-3{
-        font-size:22px;
+    .home .text-3 {
+        font-size: 22px;
     }
 
-    .title{
-        font-size:32px;
+    .title {
+        font-size: 32px;
     }
 
     .about .title::after,
     .services .title::after,
     .skills .title::after,
-    .contact .title::after{
-        font-size:16px;
+    .contact .title::after {
+        font-size: 16px;
     }
 
-    .about-content .left img{
-        width:200px;
+    .about-content .left img {
+        width: 200px;
     }
 
-    .box{
-        padding:30px 20px;
+    .box {
+        padding: 30px 20px;
     }
 
-    .box i{
-        font-size:45px;
+    .box i {
+        font-size: 45px;
     }
 
-    .box .text{
-        font-size:22px;
+    .box .text {
+        font-size: 22px;
     }
 
-    .box p{
-        font-size:15px;
+    .box p {
+        font-size: 15px;
     }
 
-    .hire-btn{
-        width:100%;
-        text-align:center;
+    .hire-btn {
+        width: 100%;
+        text-align: center;
     }
 
+}
+
+.menu-btn {
+    display: none;
+}
+
+/*==========================
+        SKILLS
+===========================*/
+
+.skills {
+    padding: 100px 0;
+}
+
+.skills .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.skills .title::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.skills .title::after {
+    content: "what i know";
+    position: absolute;
+    left: 50%;
+    bottom: -22px;
+    transform: translateX(-50%);
+    background: #fff;
+    color: crimson;
+    padding: 0 8px;
+    font-size: 20px;
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-content .column {
+    width: 48%;
+}
+
+.skills-content .left .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.skills-content .left p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.skills-content .left a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.skills-content .left a:hover {
+    background: none;
+    color: crimson;
+    border: 2px solid crimson;
+}
+
+.skills-content .right .bars {
+    margin-bottom: 20px;
+}
+
+.skills-content .right .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skills-content .right .line {
+    height: 6px;
+    width: 100%;
+    background: #ddd;
+    position: relative;
+    border-radius: 5px;
+}
+
+.skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: crimson;
+    border-radius: 5px;
+}
+
+/* Skill Levels */
+
+.line.html::before {
+    width: 90%;
+}
+
+.line.css::before {
+    width: 85%;
+}
+
+.line.javascript::before {
+    width: 75%;
+}
+
+.line.react::before {
+    width: 60%;
+}
+
+.line.node::before {
+    width: 50%;
+}
+
+/*==========================
+        FOOTER
+===========================*/
+
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    background: #222;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.social-icons a:hover {
+    background: crimson;
+    transform: translateY(-5px);
+}
+
+footer p {
+    font-size: 15px;
+    letter-spacing: 1px;
 }
