@@ -1,0 +1,15 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif}
+body{background:#111;color:#fff;overflow-x:hidden}.navbar{background:#111;border-bottom:1px solid #292929;padding:18px 0;position:sticky;top:0;z-index:1000}
+.nav-container{width:90%;max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.logo{color:#fff;font-size:32px;font-weight:700;text-decoration:none}.logo span{color:crimson}
+.menu{display:flex;gap:28px;list-style:none}.menu a{color:#fff;text-decoration:none}.menu a:hover{color:crimson}
+.mobile-toggle{display:none;background:none;border:0;color:#fff;font-size:25px;cursor:pointer}
+.hire{padding:90px 0;min-height:calc(100vh - 120px)}.container{width:90%;max-width:1200px;margin:auto}
+.heading{text-align:center;margin-bottom:60px}.heading p{color:crimson}.heading h1{font-size:50px}.heading span{color:crimson}.line{width:80px;height:4px;background:crimson;border-radius:10px;margin:15px auto}
+.hire-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.intro,.hire-form{background:#1c1c1c;border-radius:14px;padding:35px;border:1px solid #292929}
+.icon{font-size:48px;color:crimson;margin-bottom:20px}.intro h2{font-size:30px;margin-bottom:15px}.intro p{color:#ccc;line-height:1.8}
+.services{margin-top:30px;display:grid;gap:14px}.services div{padding:14px;background:#111;border-left:3px solid crimson}.services i{color:crimson;margin-right:10px}
+.hire-form{display:flex;flex-direction:column;gap:9px}.hire-form input,.hire-form select,.hire-form textarea{width:100%;padding:13px;border-radius:7px;border:1px solid #444;background:#111;color:#fff;outline:none}.hire-form input:focus,.hire-form select:focus,.hire-form textarea:focus{border-color:crimson}
+.hire-form button{margin-top:12px;padding:14px;background:crimson;color:#fff;border:0;border-radius:7px;font-size:16px;cursor:pointer}.hire-form button:hover{background:#a9002c}.note{color:#8f8;font-size:13px;min-height:20px}
+footer{text-align:center;background:#0a0a0a;color:#aaa;padding:24px}
+@media(max-width:800px){.mobile-toggle{display:block}.menu{position:absolute;top:70px;left:0;width:100%;background:#111;display:none;flex-direction:column;gap:0;padding:15px 0;text-align:center;border-bottom:1px solid #292929}.menu.active{display:flex}.menu li{padding:13px}.hire-grid{grid-template-columns:1fr}.heading h1{font-size:40px}}
