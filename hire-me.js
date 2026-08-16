@@ -1,5 +1,74 @@
-const toggle=document.querySelector(".mobile-toggle");
-const menu=document.querySelector(".menu");
-toggle.addEventListener("click",()=>{const open=menu.classList.toggle("active");toggle.setAttribute("aria-expanded",open);toggle.innerHTML=open?'<i class="fas fa-xmark"></i>':'<i class="fas fa-bars"></i>';});
-document.querySelectorAll(".menu a").forEach(link=>link.addEventListener("click",()=>{menu.classList.remove("active");toggle.setAttribute("aria-expanded","false");toggle.innerHTML='<i class="fas fa-bars"></i>';}));
-document.getElementById("hireForm").addEventListener("submit",e=>{e.preventDefault();document.getElementById("formNote").textContent="Your request is ready. Connect this form to your email/backend to receive submissions.";});
+const hireForm = document.getElementById("hireForm");
+const formMessage = document.getElementById("formMessage");
+
+if (hireForm) {
+
+    hireForm.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+        const button = hireForm.querySelector("button");
+
+        button.innerHTML =
+            'Sending... <i class="fas fa-spinner fa-spin"></i>';
+
+        button.disabled = true;
+
+
+        const formData = new FormData(hireForm);
+
+
+        try {
+
+            const response = await fetch(
+                hireForm.action.replace(
+                    "https://formsubmit.co/",
+                    "https://formsubmit.co/ajax/"
+                ),
+                {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                }
+            );
+
+
+            if (response.ok) {
+
+                formMessage.textContent =
+                    "Your project request has been sent successfully! I'll get back to you soon.";
+
+                formMessage.classList.add("show");
+
+                hireForm.reset();
+
+                button.innerHTML =
+                    'Send Project Request <i class="fas fa-paper-plane"></i>';
+
+                button.disabled = false;
+
+            } else {
+
+                throw new Error("Submission failed");
+
+            }
+
+        } catch (error) {
+
+            formMessage.textContent =
+                "Something went wrong. Please try again.";
+
+            formMessage.classList.add("show");
+
+            button.innerHTML =
+                'Send Project Request <i class="fas fa-paper-plane"></i>';
+
+            button.disabled = false;
+
+        }
+
+    });
+
+}x
