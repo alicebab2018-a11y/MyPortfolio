@@ -1,0 +1,437 @@
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111;
+    color: #fff;
+}
+
+
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar {
+    width: 100%;
+    background: #111;
+    border-bottom: 1px solid #292929;
+    padding: 20px 0;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: crimson;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn {
+    color: #fff;
+    border: 2px solid crimson;
+
+    padding: 10px 20px;
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.back-btn i {
+    margin-right: 7px;
+}
+
+.back-btn:hover {
+    background: crimson;
+}
+
+
+/* ==============================
+   ABOUT PAGE
+============================== */
+
+.about-page {
+    padding: 100px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ==============================
+   HEADING
+============================== */
+
+.heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.small-title {
+    color: crimson;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.heading h1 {
+    font-size: 50px;
+    margin-top: 5px;
+}
+
+.heading h1 span {
+    color: crimson;
+}
+
+.line {
+    width: 80px;
+    height: 4px;
+    background: crimson;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+
+/* ==============================
+   ABOUT GRID
+============================== */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns:
+        400px 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* ==============================
+   IMAGE
+============================== */
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    border: 3px solid crimson;
+
+    box-shadow:
+        0 0 30px rgba(220, 20, 60, 0.25);
+}
+
+
+/* ==============================
+   TEXT
+============================== */
+
+.about-text h2 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.about-text h3 {
+    color: crimson;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    color: #ccc;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   INFORMATION
+============================== */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.info-grid div {
+    background: #1c1c1c;
+
+    padding: 15px;
+
+    border-left: 3px solid crimson;
+
+    border-radius: 5px;
+}
+
+.info-grid strong {
+    display: block;
+    color: crimson;
+    margin-bottom: 3px;
+}
+
+.info-grid span {
+    color: #ddd;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   CONTACT BUTTON
+============================== */
+
+.contact-btn {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 30px;
+
+    background: crimson;
+    color: #fff;
+
+    padding: 14px 25px;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #fff;
+    color: crimson;
+
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   WHAT I DO
+============================== */
+
+.what-i-do {
+    margin-top: 120px;
+}
+
+.what-i-do h2 {
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 50px;
+}
+
+.what-i-do h2 span {
+    color: crimson;
+}
+
+
+/* ==============================
+   CARDS
+============================== */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.info-card {
+    background: #1c1c1c;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    border-bottom: 3px solid crimson;
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+
+    background: crimson;
+}
+
+.info-card i {
+    font-size: 45px;
+
+    color: crimson;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+.info-card:hover i {
+    color: #fff;
+}
+
+.info-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.info-card:hover p {
+    color: #fff;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #0a0a0a;
+
+    color: #aaa;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 900px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 400px;
+
+        margin: auto;
+    }
+
+    .about-text p {
+        text-align: left;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .logo a {
+        font-size: 25px;
+    }
+
+    .back-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .about-page {
+        padding: 70px 0;
+    }
+
+    .heading h1 {
+        font-size: 38px;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .about-text h2 {
+        font-size: 27px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+
+        text-align: left;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .what-i-do {
+        margin-top: 80px;
+    }
+
+    .what-i-do h2 {
+        font-size: 32px;
+    }
+
+}
