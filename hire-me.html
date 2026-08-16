@@ -13,40 +13,201 @@
 <body>
 <nav class="navbar">
 <div class="nav-container">
-<a class="logo" href="index.html">Portfo<span>lio.</span></a>
-<button class="mobile-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fas fa-bars"></i></button>
+<a class="logo" href="index.html">
+    Portfo<span>lio.</span>
+</a>
+<button class="mobile-toggle" aria-label="Open navigation" aria-expanded="false">
+    <i class="fas fa-bars">
+
+    </i>
+</button>
 <ul class="menu">
-<li><a href="index.html">Home</a></li>
-<li><a href="read-more.html">About</a></li>
-<li><a href="index.html#services">Services</a></li>
-<li><a href="index.html#projects">Projects</a></li>
-<li><a href="index.html#contact">Contact</a></li>
+<li>
+    <a href="index.html">
+        Home</a>
+    </li>
+<li>
+    <a href="read-more.html">
+        About
+    </a>
+</li>
+<li>
+    <a href="index.html#services">
+        Services
+
+    </a>
+</li>
+<li>
+    <a href="index.html#projects">
+    Projects
+
+</a>
+</li>
+<li>
+    <a href="index.html#contact">
+    Contact
+
+</a>
+</li>
 </ul>
 </div>
 </nav>
 <main class="hire">
 <div class="container">
-<div class="heading"><p>Let's work together</p><h1>Hire <span>Me</span></h1><div class="line"></div></div>
+<div class="heading">
+    <p>
+        Let's work together
+    </p>
+        <h1>
+            Hire <span>Me</span>
+        </h1>
+        <div class="line">
+        </div>
+    </div>
 <div class="hire-grid">
 <section class="intro">
-<i class="fas fa-briefcase icon"></i>
-<h2>Have a project in mind?</h2>
-<p>Tell me what you want to build, your preferred deadline, and any important requirements.</p>
+<i class="fas fa-briefcase icon">
+
+</i>
+<h2>
+    Have a project in mind?
+</h2>
+<p>
+    Tell me what you want to build, your preferred deadline, and any important requirements.
+</p>
+
 <div class="services">
-<div><i class="fas fa-code"></i> Web Development</div>
-<div><i class="fas fa-palette"></i> UI / UX Design</div>
-<div><i class="fas fa-mobile-screen"></i> Responsive Websites</div>
+
+    <div>
+    <i class="fas fa-code"></i> Web Development
+</div>
+
+<div>
+    <i class="fas fa-palette"></i> UI / UX Design
+</div>
+
+<div>
+    <i class="fas fa-mobile-screen"></i> Responsive Websites
+</div>
+
 </div>
 </section>
-<form class="hire-form" id="hireForm">
-<label for="name">Your Name</label><input id="name" type="text" required>
-<label for="email">Your Email</label><input id="email" type="email" required>
-<label for="service">Service</label>
-<select id="service" required><option value="">Choose a service</option><option>Web Development</option><option>UI / UX Design</option><option>Responsive Website</option></select>
-<label for="budget">Budget</label><input id="budget" type="text" placeholder="e.g. ₦200,000">
-<label for="message">Project Details</label><textarea id="message" rows="7" required></textarea>
-<button type="submit">Send Project Request <i class="fas fa-paper-plane"></i></button>
-<p class="note" id="formNote"></p>
+<form class="hire-form"
+      id="hireForm"
+      action="https://formsubmit.co/alicebab2018@gmail.com"
+      method="POST">
+
+    <!-- Name -->
+    <label for="name">Your Name</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+    >
+
+
+    <!-- Email -->
+    <label for="email">Your Email</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+    >
+
+
+    <!-- Service -->
+    <label for="service">Service</label>
+
+    <select
+        id="service"
+        name="service"
+        required
+    >
+
+        <option value="">
+            Choose a service
+        </option>
+
+        <option value="Web Development">
+            Web Development
+        </option>
+
+        <option value="UI / UX Design">
+            UI / UX Design
+        </option>
+
+        <option value="Responsive Website">
+            Responsive Website
+        </option>
+
+    </select>
+
+
+    <!-- Budget -->
+    <label for="budget">Budget</label>
+
+    <input
+        type="text"
+        id="budget"
+        name="budget"
+        placeholder="e.g. ₦200,000"
+    >
+
+
+    <!-- Message -->
+    <label for="message">Project Details</label>
+
+    <textarea
+        id="message"
+        name="message"
+        rows="7"
+        placeholder="Tell me about your project..."
+        required
+    ></textarea>
+
+
+    <!-- FormSubmit settings -->
+
+    <input
+        type="hidden"
+        name="_subject"
+        value="New Hire Me Request"
+    >
+
+    <input
+        type="hidden"
+        name="_template"
+        value="table"
+    >
+
+    <input
+        type="hidden"
+        name="_captcha"
+        value="true"
+    >
+
+
+    <!-- BUTTON -->
+
+    <button type="submit">
+
+        Send Project Request
+        <i class="fas fa-paper-plane"></i>
+
+    </button>
+
+
+    <!-- SUCCESS MESSAGE -->
+
+    <p
+        class="form-message"
+        id="formMessage">
+    </p>
+
 </form>
 </div>
 </div>
